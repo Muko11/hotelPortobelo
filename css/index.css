@@ -1,0 +1,243 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+/* Iconos */
+
+.iconos {
+    width: 30px;
+    height: 30px;
+}
+
+/* Titulos */
+
+.titulos {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Botones */
+
+.boton {
+    background-color: #5499C7;
+    color: white;
+    text-decoration: none;
+    padding: 12px 6px;
+    border: 0;
+}
+
+.boton:hover {
+    background-color: #2874A6;
+    color: white;
+    text-decoration: underline;
+}
+
+/* Acordeon */
+
+#logo {
+    width: 50px;
+    height: 50px;
+}
+
+.acordeon {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.estrellas {
+    display: flex;
+    justify-content: center;
+}
+
+/* Nav */
+
+nav {
+    background-color: rgb(231, 241, 255);
+}
+
+.nav-link {
+    color: black;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+#identificador {
+    text-decoration: underline;
+    color: black;
+}
+
+
+/* Carousel */
+
+.carousel-item img {
+    opacity: .6;
+    min-width: 300px;
+    min-height: 200px;
+    clear: both;
+}
+
+/* Planes */
+
+.bienvenida {
+    background-color: #1A5276;
+}
+
+.primer-plan {
+    background-color: #2874A6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.segundo-plan {
+    background-color: #2E86C1;
+}
+
+.tercer-plan {
+    background-color: #5499C7;
+}
+
+.cuarto-plan {
+    background-color: #AED6F1;
+}
+
+/* Habitaciones */
+
+.card-body {
+    background-color: #1A5276;
+}
+
+.tarjeta {
+    border: 1px solid black;
+    border-left: 5px outset green;
+    padding: 0;
+}
+
+/* Restaurante */
+
+#img-restaurante {
+    min-width: 300px;
+    min-height: 200px;
+    clear: both;
+}
+
+.carta-restaurante {
+    background-color: #5499C7;
+    color: white;
+    text-decoration: none;
+    padding: 12px 36px;
+}
+
+.carta-restaurante:hover {
+    background-color: #2874A6;
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* Contacto */
+
+#enviar {
+    background-color: #5499C7;
+    color: white;
+    text-decoration: none;
+    padding: 12px 36px;
+    border: 0;
+}
+
+#enviar:hover {
+    background-color: #2874A6;
+    color: white;
+    text-decoration: underline;
+}
+
+#formularioContacto {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+
+/* Footer */
+
+footer {
+    background-color: #1A5276;
+}
+
+.logo-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.redes-footer,
+.nav-redes {
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+/* Medias */
+
+@media (max-width: 650px) {
+    .acordeon {
+        display: grid;
+        row-gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .grid-logo,
+    .contenedor-acordeon {
+        margin: 0 auto;
+    }
+
+    .accordion-body {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 992px) {
+    .menu {
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .footer {
+        display: grid;
+        row-gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .logo-footer,
+    .text-footer,
+    .redes-footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .redes-footer {
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
